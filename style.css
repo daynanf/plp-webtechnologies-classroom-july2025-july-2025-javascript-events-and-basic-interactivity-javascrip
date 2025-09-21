@@ -1,0 +1,99 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+header, footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #0077ff;
+  color: white;
+  font-size: 1rem;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Counter */
+#counterDisplay {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* FAQ */
+.faq {
+  margin: 10px 0;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: #eee;
+  color: #333;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px;
+  background: #fafafa;
+  border-left: 3px solid #0077ff;
+  margin-top: 5px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #1a1a1a;
+  color: #eee;
+}
+
+.dark-mode button {
+  background: #444;
+}

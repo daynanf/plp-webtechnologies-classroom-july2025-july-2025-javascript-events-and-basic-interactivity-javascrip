@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌟 Interactive Web Page</h1>
+    <button id="themeToggle">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 1: Event Handling Example -->
+    <section>
+      <h2>🎮 Counter Game</h2>
+      <p>Click the button to increase the counter!</p>
+      <button id="counterBtn">Click Me</button>
+      <p id="counterDisplay">Counter: 0</p>
+    </section>
+
+    <!-- Part 2: Interactive Elements -->
+    <section>
+      <h2>❓ FAQ Section</h2>
+      <div class="faq">
+        <button class="faq-question">What is JavaScript?</button>
+        <div class="faq-answer">JavaScript is a programming language used to make web pages interactive.</div>
+      </div>
+      <div class="faq">
+        <button class="faq-question">What is DOM?</button>
+        <div class="faq-answer">DOM (Document Object Model) is how JavaScript interacts with HTML elements.</div>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+      <h2>📋 Registration Form</h2>
+      <form id="registrationForm" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <small class="error" id="nameError"></small>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <small class="error" id="emailError"></small>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password" required />
+        <small class="error" id="passwordError"></small>
+
+        <button type="submit">Register</button>
+        <p id="formSuccess" class="success"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>🔥 Built with ❤️ and JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
